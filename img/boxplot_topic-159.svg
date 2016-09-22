@@ -1,0 +1,679 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="chart-e8508cbc-ef68-4893-b777-4a54fa82bace" class="pygal-chart" viewBox="0 0 800 600">
+  <!--Generated with pygal 2.2.2 (lxml) ©Kozea 2012-2016 on 2016-09-22-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs>
+    <style type="text/css">/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Font-sizes from config, override with care
+ */
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace  {
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: FreeSans;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .title {
+  font-family: FreeSans;
+  font-size: 20px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .legends .legend text {
+  font-family: FreeSans;
+  font-size: 16px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis text {
+  font-family: FreeSans;
+  font-size: 12px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis text.major {
+  font-family: FreeSans;
+  font-size: 10px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .text-overlay text.value {
+  font-family: FreeSans;
+  font-size: 16px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .text-overlay text.label {
+  font-family: FreeSans;
+  font-size: 10px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip {
+  font-family: FreeSans;
+  font-size: 14px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace text.no_data {
+  font-family: FreeSans;
+  font-size: 64px;
+}
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Styles from config
+ */
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace {
+  background-color: white;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace path,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace rect,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace circle {
+  -webkit-transition: 100ms ease-in;
+  -moz-transition: 100ms ease-in;
+  transition: 100ms ease-in;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .graph &gt; .background {
+  fill: white;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .plot &gt; .background {
+  fill: white;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .graph {
+  fill: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace text.no_data {
+  fill: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .title {
+  fill: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .legends .legend text {
+  fill: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .legends .legend:hover text {
+  fill: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .line {
+  stroke: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .guide.line {
+  stroke: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .major.line {
+  stroke: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis text.major {
+  fill: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y .guides:hover .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .line-graph .axis.x .guides:hover .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .stackedline-graph .axis.x .guides:hover .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .xy-graph .axis.x .guides:hover .guide.line {
+  stroke: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .guides:hover text {
+  fill: #000000;
+}
+
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .reactive {
+  fill-opacity: .6;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .ci {
+    stroke: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .reactive.active,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .active .reactive {
+  fill-opacity: .9;
+  stroke-width: 4;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .ci .reactive.active {
+  stroke-width: 1.5;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .series text {
+  fill: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip rect {
+  fill: white;
+  stroke: #000000;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip .label {
+  fill: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip .label {
+  fill: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip .legend {
+  font-size: .8em;
+  fill: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip .x_label {
+  font-size: .6em;
+  fill: #000000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip .xlink {
+  font-size: .5em;
+  text-decoration: underline;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip .value {
+  font-size: 1.5em;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .bound {
+  font-size: .5em;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .max-value {
+  font-size: .75em;
+  fill: #282828;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .map-element {
+  fill: white;
+  stroke: #282828 !important;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .map-element .reactive {
+  fill-opacity: inherit;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-0, #chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-0 a:visited {
+  stroke: #002699;
+  fill: #002699;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-1, #chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-1 a:visited {
+  stroke: #006600;
+  fill: #006600;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-2, #chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-2 a:visited {
+  stroke: #b30000;
+  fill: #b30000;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-3, #chart-e8508cbc-ef68-4893-b777-4a54fa82bace .color-3 a:visited {
+  stroke: #e67300;
+  fill: #e67300;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace  .text-overlay .color-0 text {
+  fill: black;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace  .text-overlay .color-1 text {
+  fill: black;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace  .text-overlay .color-2 text {
+  fill: black;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace  .text-overlay .color-3 text {
+  fill: black;
+}
+
+
+
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace text.no_data {
+  text-anchor: middle;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .guide.line {
+  fill: none;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .centered {
+  text-anchor: middle;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .title {
+  text-anchor: middle;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .legends .legend text {
+  fill-opacity: 1;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.x text {
+  text-anchor: middle;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y text {
+  text-anchor: end;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y2 text {
+  text-anchor: start;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .guide.line {
+  stroke-dasharray: 4,4;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .major.guide.line {
+  stroke-dasharray: 6,6;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .horizontal .axis.y .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .horizontal .axis.y2 .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .horizontal .axis.always_show .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y .guides:hover .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.y2 .guides:hover .guide.line,
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis.x .guides:hover .guide.line {
+  opacity: 1;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .axis .guides:hover text {
+  opacity: 1;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .nofill {
+  fill: none;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .subtle-fill {
+  fill-opacity: .2;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .dot.active {
+  stroke-width: 5px;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .dot.negative {
+  fill: transparent;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace  text, #chart-e8508cbc-ef68-4893-b777-4a54fa82bace  tspan {
+  stroke: none !important;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .series text.active {
+  opacity: 1;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip rect {
+  fill-opacity: .95;
+  stroke-width: .5;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .tooltip text {
+  fill-opacity: 1;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .showable {
+  visibility: hidden;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .showable.shown {
+  visibility: visible;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .gauge-background {
+  fill: rgba(229, 229, 229, 1);
+  stroke: none;
+}
+
+#chart-e8508cbc-ef68-4893-b777-4a54fa82bace .bg-lines {
+  stroke: white;
+  stroke-width: 2px;
+}
+</style>
+    <script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['e8508cbc-ef68-4893-b777-4a54fa82bace'] = {"print_labels": false, "x_labels_major_count": null, "strict": false, "truncate_label": null, "legend_at_bottom_columns": 4, "width": 800, "show_x_guides": false, "pretty_print": true, "print_values": false, "show_only_major_dots": false, "y_labels": null, "title": "p\u00e8re-m\u00e8re-fils (159) (32/200)", "height": 600, "include_x_axis": false, "legends": ["contemp-blanche", "contemp-policier", "simenon-blanche", "simenon-policier"], "fill": false, "x_labels_major": null, "show_y_guides": true, "show_minor_y_labels": true, "x_label_rotation": 0, "y_labels_major_count": null, "legend_at_bottom": true, "y_labels_major_every": null, "show_y_labels": true, "margin_bottom": null, "show_legend": true, "inverse_y_axis": false, "y_labels_major": null, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "x_title": null, "rounded_bars": null, "show_x_labels": true, "max_scale": 16, "stroke": true, "margin_right": null, "stroke_style": null, "spacing": 10, "inner_radius": 0, "legend_box_size": 12, "missing_value_fill_truncation": "x", "margin": 20, "x_labels": null, "xrange": null, "disable_xml_declaration": false, "half_pie": false, "stack_from_top": false, "tooltip_fancy_mode": true, "secondary_range": null, "css": ["file://style.css", "file://graph.css"], "tooltip_border_radius": 0, "interpolation_precision": 250, "show_dots": true, "dots_size": 2.5, "print_zeroes": true, "allow_interruptions": false, "y_title": null, "interpolate": null, "margin_top": null, "explicit_size": false, "classes": ["pygal-chart"], "print_values_position": "center", "force_uri_protocol": "https", "truncate_legend": null, "show_minor_x_labels": true, "y_label_rotation": 0, "box_mode": "tukey", "dynamic_print_values": false, "logarithmic": false, "formatter": null, "x_labels_major_every": null, "style": {"value_label_font_family": "FreeSans", "foreground_strong": "#000000", "title_font_family": "FreeSans", "opacity_hover": ".9", "major_label_font_family": "FreeSans", "background": "white", "value_font_family": "FreeSans", "tooltip_font_size": 14, "label_font_family": "FreeSans", "guide_stroke_dasharray": "4,4", "value_label_font_size": 10, "value_colors": [], "colors": ["#002699", "#006600", "#b30000", "#e67300"], "value_background": "rgba(229, 229, 229, 1)", "foreground": "#282828", "opacity": ".6", "font_family": "FreeSans", "title_font_size": 20, "no_data_font_family": "FreeSans", "plot_background": "white", "major_label_font_size": 10, "ci_colors": [], "label_font_size": 12, "foreground_subtle": "#282828", "legend_font_size": 16, "legend_font_family": "FreeSans", "major_guide_stroke_dasharray": "6,6", "no_data_font_size": 64, "value_font_size": 16, "transition": "100ms ease-in", "tooltip_font_family": "FreeSans"}, "interpolation_parameters": {}, "order_min": null, "zero": 0, "min_scale": 4, "defs": [], "margin_left": null, "no_prefix": false, "no_data_text": "No data", "range": null}</script>
+    <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+  </defs>
+  <title>père-mère-fils (159) (32/200)</title>
+  <g class="graph box-graph vertical">
+    <rect class="background" height="600" width="800" x="0" y="0"/>
+    <g class="plot" transform="translate(58, 50)">
+      <rect class="background" height="504.0" width="721.2" x="0" y="0"/>
+      <g class="axis y">
+        <g class="guides">
+          <path class="axis major line" d="M0.000000 494.307692 h721.200000"/>
+          <text class="major" x="-5" y="498.507692308">0</text>
+          <title>0</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 452.344886 h721.200000"/>
+          <text class="" x="-5" y="456.544885939">0.01</text>
+          <title>0.01</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 410.382080 h721.200000"/>
+          <text class="" x="-5" y="414.58207957">0.02</text>
+          <title>0.02</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 368.419273 h721.200000"/>
+          <text class="" x="-5" y="372.619273201">0.03</text>
+          <title>0.03</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 326.456467 h721.200000"/>
+          <text class="" x="-5" y="330.656466832">0.04</text>
+          <title>0.04</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 284.493660 h721.200000"/>
+          <text class="" x="-5" y="288.693660463">0.05</text>
+          <title>0.05</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 242.530854 h721.200000"/>
+          <text class="" x="-5" y="246.730854094">0.06</text>
+          <title>0.06</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 200.568048 h721.200000"/>
+          <text class="" x="-5" y="204.768047725">0.07</text>
+          <title>0.07</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 158.605241 h721.200000"/>
+          <text class="" x="-5" y="162.805241356">0.08</text>
+          <title>0.08</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 116.642435 h721.200000"/>
+          <text class="" x="-5" y="120.842434987">0.09</text>
+          <title>0.09</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 74.679629 h721.200000"/>
+          <text class="" x="-5" y="78.8796286181">0.1</text>
+          <title>0.1</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 32.716822 h721.200000"/>
+          <text class="" x="-5" y="36.9168222491">0.11</text>
+          <title>0.11</title>
+        </g>
+      </g>
+      <g class="series serie-0 color-0">
+        <g class="boxes">
+          <g class="box">
+            <path class="reactive tooltip-trigger" d="M62.411538 493.201904 L138.692308 493.201904" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M24.271154 477.232208 L176.832692 477.232208" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M62.411538 420.213913 L138.692308 420.213913" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M100.551923 493.201904 L100.551923 484.480467" stroke-width="2"/>
+            <path class="reactive tooltip-trigger" d="M100.551923 420.213913 L100.551923 458.390345" stroke-width="2"/>
+            <rect class="subtle-fill reactive tooltip-trigger" height="26.0901220806" width="152.56153846153848" x="24.271153846153844" y="458.390344787"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="417.168068027" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="413.961457531" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="412.547017327" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="412.008304644" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="409.250410871" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="400.126982708" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="398.083187187" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="397.269961527" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="395.522517637" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="393.154160465" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="379.700011227" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="377.742660773" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="373.509307113" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="363.89919043" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="362.745260183" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="351.743648962" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="342.610098713" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="339.97530506" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="333.334688728" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="307.301088223" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="243.255437345" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="240.52102483" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="178.815420549" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="100.55192307692309" cy="9.69230769231" r="3"/>
+            <desc class="value">Min: 0.000263516324
+Lower Whisker: 0.000263516324
+Q1: 0.002341889471
+Q2: 0.004069194965
+Q3: 0.008559329232
+Upper Whisker: 0.01765701231
+Max: 0.1154868863</desc>
+            <desc class="x centered">100.55192307692309</desc>
+            <desc class="y centered">466.703767444</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-1 color-1">
+        <g class="boxes">
+          <g class="box">
+            <path class="reactive tooltip-trigger" d="M235.776923 493.091921 L312.057692 493.091921" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M197.636538 480.914695 L350.198077 480.914695" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M235.776923 441.642318 L312.057692 441.642318" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M273.917308 493.091921 L273.917308 486.111788" stroke-width="2"/>
+            <path class="reactive tooltip-trigger" d="M273.917308 441.642318 L273.917308 468.245002" stroke-width="2"/>
+            <rect class="subtle-fill reactive tooltip-trigger" height="17.8667868787" width="152.56153846153848" x="197.63653846153846" y="468.245001613"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="437.115377401" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="435.370560815" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="434.522590811" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="433.71389581" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="433.620023395" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="431.920037696" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="430.575535695" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="430.186038809" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="424.553550799" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="420.851854357" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="412.593038942" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="409.430457912" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="403.372674792" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="401.491009624" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="400.667094872" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="273.9173076923077" cy="379.072165475" r="3"/>
+            <desc class="value">Min: 0.0002897258182
+Lower Whisker: 0.0002897258182
+Q1: 0.001953135294
+Q2: 0.003191635309
+Q3: 0.00621090269
+Upper Whisker: 0.01255048897
+Max: 0.02746134894</desc>
+            <desc class="x centered">273.9173076923077</desc>
+            <desc class="y centered">474.00114498</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-2 color-2">
+        <g class="boxes">
+          <g class="box">
+            <path class="reactive tooltip-trigger" d="M409.142308 490.644928 L485.423077 490.644928" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M371.001923 455.755623 L523.563462 455.755623" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M409.142308 394.248286 L485.423077 394.248286" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M447.282692 490.644928 L447.282692 475.025036" stroke-width="2"/>
+            <path class="reactive tooltip-trigger" d="M447.282692 394.248286 L447.282692 424.476758" stroke-width="2"/>
+            <rect class="subtle-fill reactive tooltip-trigger" height="50.5482783313" width="152.56153846153848" x="371.0019230769231" y="424.476757615"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="447.28269230769234" cy="343.255642148" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="447.28269230769234" cy="330.341408724" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="447.28269230769234" cy="298.487919084" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="447.28269230769234" cy="262.821568832" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="447.28269230769234" cy="177.484137511" r="3"/>
+            <desc class="value">Min: 0.0008728596036
+Lower Whisker: 0.0008728596036
+Q1: 0.004595177975
+Q2: 0.009187199921
+Q3: 0.0166411498
+Upper Whisker: 0.0238447843
+Max: 0.07550104061</desc>
+            <desc class="x centered">447.28269230769234</desc>
+            <desc class="y centered">448.030126173</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-3 color-3">
+        <g class="boxes">
+          <g class="box">
+            <path class="reactive tooltip-trigger" d="M582.507692 491.553863 L658.788462 491.553863" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M544.367308 474.995234 L696.928846 474.995234" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M582.507692 420.544671 L658.788462 420.544671" stroke-width="3"/>
+            <path class="reactive tooltip-trigger" d="M620.648077 491.553863 L620.648077 484.097599" stroke-width="2"/>
+            <path class="reactive tooltip-trigger" d="M620.648077 420.544671 L620.648077 447.729743" stroke-width="2"/>
+            <rect class="subtle-fill reactive tooltip-trigger" height="36.3678559495" width="152.56153846153848" x="544.3673076923076" y="447.729742789"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="620.6480769230768" cy="391.66770702" r="3"/>
+            <circle class="subtle-fill reactive tooltip-trigger" cx="620.6480769230768" cy="372.006060853" r="3"/>
+            <desc class="value">Min: 0.0006562548207
+Lower Whisker: 0.0006562548207
+Q1: 0.002433129348
+Q2: 0.004602279922
+Q3: 0.01109981756
+Upper Whisker: 0.01757819063
+Max: 0.029145246</desc>
+            <desc class="x centered">620.6480769230768</desc>
+            <desc class="y centered">463.784221988</desc>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="titles">
+      <text class="title plot_title" x="400.0" y="30">père-mère-fils (159) (32/200)</text>
+    </g>
+    <g class="plot overlay" transform="translate(58, 50)">
+      <g class="series serie-0 color-0"/>
+      <g class="series serie-1 color-1"/>
+      <g class="series serie-2 color-2"/>
+      <g class="series serie-3 color-3"/>
+    </g>
+    <g class="plot text-overlay" transform="translate(58, 50)">
+      <g class="series serie-0 color-0"/>
+      <g class="series serie-1 color-1"/>
+      <g class="series serie-2 color-2"/>
+      <g class="series serie-3 color-3"/>
+    </g>
+    <g class="plot tooltip-overlay" transform="translate(58, 50)">
+      <g class="tooltip" style="opacity: 0" transform="translate(0 0)">
+        <rect class="tooltip-box" height="0" rx="0" ry="0" width="0"/>
+        <g class="text"/>
+      </g>
+    </g>
+    <g class="legends" transform="translate(68, 564)">
+      <g class="legend reactive activate-serie" id="activate-serie-0">
+        <rect class="color-0 reactive" height="12" width="12" x="0.0" y="2.0"/>
+        <text x="17.0" y="12.8">contemp-blanche</text>
+      </g>
+      <g class="legend reactive activate-serie" id="activate-serie-1">
+        <rect class="color-1 reactive" height="12" width="12" x="180.3" y="2.0"/>
+        <text x="197.3" y="12.8">contemp-policier</text>
+      </g>
+      <g class="legend reactive activate-serie" id="activate-serie-2">
+        <rect class="color-2 reactive" height="12" width="12" x="360.6" y="2.0"/>
+        <text x="377.6" y="12.8">simenon-blanche</text>
+      </g>
+      <g class="legend reactive activate-serie" id="activate-serie-3">
+        <rect class="color-3 reactive" height="12" width="12" x="540.9000000000001" y="2.0"/>
+        <text x="557.9000000000001" y="12.8">simenon-policier</text>
+      </g>
+    </g>
+  </g>
+</svg>

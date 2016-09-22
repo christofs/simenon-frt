@@ -1,0 +1,1230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4" class="pygal-chart" viewBox="0 0 800 600">
+  <!--Generated with pygal 2.2.2 (lxml) ©Kozea 2012-2016 on 2016-09-22-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs>
+    <style type="text/css">/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Font-sizes from config, override with care
+ */
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4  {
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: FreeSans;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .title {
+  font-family: FreeSans;
+  font-size: 20px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .legends .legend text {
+  font-family: FreeSans;
+  font-size: 16px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis text {
+  font-family: FreeSans;
+  font-size: 12px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis text.major {
+  font-family: FreeSans;
+  font-size: 10px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .text-overlay text.value {
+  font-family: FreeSans;
+  font-size: 16px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .text-overlay text.label {
+  font-family: FreeSans;
+  font-size: 10px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip {
+  font-family: FreeSans;
+  font-size: 14px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 text.no_data {
+  font-family: FreeSans;
+  font-size: 64px;
+}
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Styles from config
+ */
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 {
+  background-color: white;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 path,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 rect,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 circle {
+  -webkit-transition: 100ms ease-in;
+  -moz-transition: 100ms ease-in;
+  transition: 100ms ease-in;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .graph &gt; .background {
+  fill: white;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .plot &gt; .background {
+  fill: white;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .graph {
+  fill: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 text.no_data {
+  fill: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .title {
+  fill: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .legends .legend text {
+  fill: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .legends .legend:hover text {
+  fill: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .line {
+  stroke: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .guide.line {
+  stroke: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .major.line {
+  stroke: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis text.major {
+  fill: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y .guides:hover .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .line-graph .axis.x .guides:hover .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .stackedline-graph .axis.x .guides:hover .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .xy-graph .axis.x .guides:hover .guide.line {
+  stroke: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .guides:hover text {
+  fill: #000000;
+}
+
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .reactive {
+  fill-opacity: .6;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .ci {
+    stroke: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .reactive.active,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .active .reactive {
+  fill-opacity: .9;
+  stroke-width: 4;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .ci .reactive.active {
+  stroke-width: 1.5;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .series text {
+  fill: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip rect {
+  fill: white;
+  stroke: #000000;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip .label {
+  fill: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip .label {
+  fill: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip .legend {
+  font-size: .8em;
+  fill: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip .x_label {
+  font-size: .6em;
+  fill: #000000;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip .xlink {
+  font-size: .5em;
+  text-decoration: underline;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip .value {
+  font-size: 1.5em;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .bound {
+  font-size: .5em;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .max-value {
+  font-size: .75em;
+  fill: #282828;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .map-element {
+  fill: white;
+  stroke: #282828 !important;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .map-element .reactive {
+  fill-opacity: inherit;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .color-0, #chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .color-0 a:visited {
+  stroke: #002699;
+  fill: #002699;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .color-1, #chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .color-1 a:visited {
+  stroke: #006600;
+  fill: #006600;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4  .text-overlay .color-0 text {
+  fill: black;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4  .text-overlay .color-1 text {
+  fill: black;
+}
+
+
+
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 text.no_data {
+  text-anchor: middle;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .guide.line {
+  fill: none;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .centered {
+  text-anchor: middle;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .title {
+  text-anchor: middle;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .legends .legend text {
+  fill-opacity: 1;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.x text {
+  text-anchor: middle;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y text {
+  text-anchor: end;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y2 text {
+  text-anchor: start;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .guide.line {
+  stroke-dasharray: 4,4;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .major.guide.line {
+  stroke-dasharray: 6,6;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .horizontal .axis.y .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .horizontal .axis.y2 .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .horizontal .axis.always_show .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y .guides:hover .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.y2 .guides:hover .guide.line,
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis.x .guides:hover .guide.line {
+  opacity: 1;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .axis .guides:hover text {
+  opacity: 1;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .nofill {
+  fill: none;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .subtle-fill {
+  fill-opacity: .2;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .dot.active {
+  stroke-width: 5px;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .dot.negative {
+  fill: transparent;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4  text, #chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4  tspan {
+  stroke: none !important;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .series text.active {
+  opacity: 1;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip rect {
+  fill-opacity: .95;
+  stroke-width: .5;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .tooltip text {
+  fill-opacity: 1;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .showable {
+  visibility: hidden;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .showable.shown {
+  visibility: visible;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .gauge-background {
+  fill: rgba(229, 229, 229, 1);
+  stroke: none;
+}
+
+#chart-2275c7b7-d8af-4263-9bc3-fa40204b49b4 .bg-lines {
+  stroke: white;
+  stroke-width: 2px;
+}
+</style>
+    <script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['2275c7b7-d8af-4263-9bc3-fa40204b49b4'] = {"print_labels": false, "x_labels_major_count": null, "strict": false, "truncate_label": null, "legend_at_bottom_columns": null, "width": 800, "show_x_guides": true, "pretty_print": true, "print_values": false, "show_only_major_dots": false, "y_labels": null, "title": "novel: maigret vs romans", "height": 600, "include_x_axis": false, "legends": ["maigret", "romans"], "fill": false, "x_labels_major": null, "show_y_guides": true, "show_minor_y_labels": true, "x_label_rotation": 300, "y_labels_major_count": null, "legend_at_bottom": true, "y_labels_major_every": null, "show_y_labels": true, "margin_bottom": null, "show_legend": true, "inverse_y_axis": false, "y_labels_major": null, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "x_title": "creation", "rounded_bars": null, "show_x_labels": true, "max_scale": 16, "stroke": false, "margin_right": null, "stroke_style": null, "spacing": 10, "inner_radius": 0, "legend_box_size": 12, "missing_value_fill_truncation": "x", "margin": 20, "x_labels": null, "xrange": null, "disable_xml_declaration": false, "half_pie": false, "stack_from_top": false, "tooltip_fancy_mode": true, "secondary_range": null, "css": ["file://style.css", "file://graph.css"], "tooltip_border_radius": 0, "interpolation_precision": 250, "show_dots": true, "dots_size": 2.5, "print_zeroes": true, "allow_interruptions": false, "y_title": "RV80NVA-mean", "interpolate": null, "margin_top": null, "explicit_size": false, "classes": ["pygal-chart"], "print_values_position": "center", "force_uri_protocol": "https", "truncate_legend": null, "show_minor_x_labels": true, "y_label_rotation": 0, "box_mode": "extremes", "dynamic_print_values": false, "logarithmic": false, "formatter": null, "x_labels_major_every": null, "style": {"value_label_font_family": "FreeSans", "foreground_strong": "#000000", "title_font_family": "FreeSans", "opacity_hover": ".9", "major_label_font_family": "FreeSans", "background": "white", "value_font_family": "FreeSans", "tooltip_font_size": 14, "label_font_family": "FreeSans", "guide_stroke_dasharray": "4,4", "value_label_font_size": 10, "value_colors": [], "colors": ["#002699", "#006600", "#b30000"], "value_background": "rgba(229, 229, 229, 1)", "foreground": "#282828", "opacity": ".6", "font_family": "FreeSans", "title_font_size": 20, "no_data_font_family": "FreeSans", "plot_background": "white", "major_label_font_size": 10, "ci_colors": [], "label_font_size": 12, "foreground_subtle": "#282828", "legend_font_size": 16, "legend_font_family": "FreeSans", "major_guide_stroke_dasharray": "6,6", "no_data_font_size": 64, "value_font_size": 16, "transition": "100ms ease-in", "tooltip_font_family": "FreeSans"}, "interpolation_parameters": {}, "order_min": null, "zero": 0, "min_scale": 4, "defs": [], "margin_left": null, "no_prefix": false, "no_data_text": "No data", "range": null}</script>
+    <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+  </defs>
+  <title>novel: maigret vs romans</title>
+  <g class="graph xy-graph vertical">
+    <rect class="background" height="600" width="800" x="0" y="0"/>
+    <g class="plot" transform="translate(88, 50)">
+      <rect class="background" height="415.0584683710082" width="691.2" x="0" y="0"/>
+      <g class="axis y">
+        <path class="line" d="M0.000000 415.058468 h691.200000"/>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 399.239806 h691.200000"/>
+          <text class="" x="-5" y="403.439806465">0.34</text>
+          <title>0.34</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 326.677137 h691.200000"/>
+          <text class="" x="-5" y="330.877137169">0.35</text>
+          <title>0.35</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 254.114468 h691.200000"/>
+          <text class="" x="-5" y="258.314467873">0.36</text>
+          <title>0.36</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 181.551799 h691.200000"/>
+          <text class="" x="-5" y="185.751798578">0.37</text>
+          <title>0.37</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 108.989129 h691.200000"/>
+          <text class="" x="-5" y="113.189129282">0.38</text>
+          <title>0.38</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M0.000000 36.426460 h691.200000"/>
+          <text class="" x="-5" y="40.6264599864">0.39</text>
+          <title>0.39</title>
+        </g>
+      </g>
+      <g class="axis x always_show">
+        <path class="line" d="M0.000000 0.000000 v415.058468"/>
+        <g class="guides">
+          <path class="guide line" d="M13.292308 0.000000 v415.058468"/>
+          <text class="backwards" x="13.2923076923" y="431.0584683710082" transform="rotate(300 13.292308 431.058468)">1930</text>
+          <title>1930</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M171.534066 0.000000 v415.058468"/>
+          <text class="backwards" x="171.534065934" y="431.0584683710082" transform="rotate(300 171.534066 431.058468)">1940</text>
+          <title>1940</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M329.775824 0.000000 v415.058468"/>
+          <text class="backwards" x="329.775824176" y="431.0584683710082" transform="rotate(300 329.775824 431.058468)">1950</text>
+          <title>1950</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M488.017582 0.000000 v415.058468"/>
+          <text class="backwards" x="488.017582418" y="431.0584683710082" transform="rotate(300 488.017582 431.058468)">1960</text>
+          <title>1960</title>
+        </g>
+        <g class="guides">
+          <path class="guide line" d="M646.259341 0.000000 v415.058468"/>
+          <text class="backwards" x="646.259340659" y="431.0584683710082" transform="rotate(300 646.259341 431.058468)">1970</text>
+          <title>1970</title>
+        </g>
+      </g>
+      <g class="series serie-0 color-0"/>
+      <g class="series serie-1 color-1"/>
+    </g>
+    <g class="titles">
+      <text class="title plot_title" x="400.0" y="30">novel: maigret vs romans</text>
+      <text class="title" x="434.40000000000003" y="530.0">creation</text>
+      <text class="title" x="0" y="287.5292341855041" transform="rotate(-90 0.000000 257.529234)">RV80NVA-mean</text>
+    </g>
+    <g class="plot overlay" transform="translate(88, 50)">
+      <g class="series serie-0 color-0">
+        <g class="dots">
+          <desc class="label">Simenon: EchecMaigret (1956)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="424.720879121" cy="82.5763176584" r="4"/>
+          <desc class="value">1956: 0.38364</desc>
+          <desc class="x left">424.720879121</desc>
+          <desc class="y left">82.5763176584</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: PietrLetton (1930)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="13.2923076923" cy="257.597475999" r="4"/>
+          <desc class="value">1930: 0.35952</desc>
+          <desc class="x top">13.2923076923</desc>
+          <desc class="y top">257.597475999</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretCoroner (1949)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="313.951648352" cy="174.005280971" r="4"/>
+          <desc class="value">1949: 0.37104</desc>
+          <desc class="x ">313.951648352</desc>
+          <desc class="y ">174.005280971</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretPeur (1953)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="377.248351648" cy="97.3791021947" r="4"/>
+          <desc class="value">1953: 0.3816</desc>
+          <desc class="x left">377.248351648</desc>
+          <desc class="y left">97.3791021947</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretNewYork (1947)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="282.303296703" cy="186.48606009" r="4"/>
+          <desc class="value">1947: 0.36932</desc>
+          <desc class="x ">282.303296703</desc>
+          <desc class="y ">186.48606009</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretTendPiege (1955)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="408.896703297" cy="205.352354107" r="4"/>
+          <desc class="value">1955: 0.36672</desc>
+          <desc class="x left">408.896703297</desc>
+          <desc class="y left">205.352354107</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretIndicateur (1971)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="662.083516484" cy="160.073248466" r="4"/>
+          <desc class="value">1971: 0.37296</desc>
+          <desc class="x left">662.083516484</desc>
+          <desc class="y left">160.073248466</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: LibertyBar (1932)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="44.9406593407" cy="238.731181983" r="4"/>
+          <desc class="value">1932: 0.36212</desc>
+          <desc class="x top">44.9406593407</desc>
+          <desc class="y top">238.731181983</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: FouBergerac (1932)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="44.9406593407" cy="223.347896092" r="4"/>
+          <desc class="value">1932: 0.36424</desc>
+          <desc class="x top">44.9406593407</desc>
+          <desc class="y top">223.347896092</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretFlamands (1932)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="44.9406593407" cy="165.297760655" r="4"/>
+          <desc class="value">1932: 0.37224</desc>
+          <desc class="x ">44.9406593407</desc>
+          <desc class="y ">165.297760655</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: ChienJaune (1931)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="29.1164835165" cy="96.218099486" r="4"/>
+          <desc class="value">1931: 0.38176</desc>
+          <desc class="x ">29.1164835165</desc>
+          <desc class="y ">96.218099486</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: TeteHomme (1931)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="29.1164835165" cy="157.460992372" r="4"/>
+          <desc class="value">1931: 0.37332</desc>
+          <desc class="x ">29.1164835165</desc>
+          <desc class="y ">157.460992372</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: ScrupulesMaigret (1957)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="440.545054945" cy="202.159596658" r="4"/>
+          <desc class="value">1957: 0.36716</desc>
+          <desc class="x left">440.545054945</desc>
+          <desc class="y left">202.159596658</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretPicratts (1950)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="329.775824176" cy="71.8370426027" r="4"/>
+          <desc class="value">1950: 0.38512</desc>
+          <desc class="x ">329.775824176</desc>
+          <desc class="y ">71.8370426027</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretClochard (1963)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="535.49010989" cy="97.6693528719" r="4"/>
+          <desc class="value">1963: 0.38156</desc>
+          <desc class="x left">535.49010989</desc>
+          <desc class="y left">97.6693528719</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretMonsieurCharles (1972)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="677.907692308" cy="110.730633345" r="4"/>
+          <desc class="value">1972: 0.37976</desc>
+          <desc class="x left">677.907692308</desc>
+          <desc class="y left">110.730633345</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: SignePicpus (1941)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="187.358241758" cy="227.991906927" r="4"/>
+          <desc class="value">1941: 0.3636</desc>
+          <desc class="x top">187.358241758</desc>
+          <desc class="y top">227.991906927</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretHommeSeul (1971)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="662.083516484" cy="145.560714607" r="4"/>
+          <desc class="value">1971: 0.37496</desc>
+          <desc class="x left">662.083516484</desc>
+          <desc class="y left">145.560714607</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretClient (1962)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="519.665934066" cy="78.5128081779" r="4"/>
+          <desc class="value">1962: 0.3842</desc>
+          <desc class="x left">519.665934066</desc>
+          <desc class="y left">78.5128081779</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: PatienceMaigret (1965)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="567.138461538" cy="240.182435369" r="4"/>
+          <desc class="value">1965: 0.36192</desc>
+          <desc class="x left top">567.138461538</desc>
+          <desc class="y left top">240.182435369</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: ConfidenceMaigret (1959)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="472.193406593" cy="154.268234923" r="4"/>
+          <desc class="value">1959: 0.37376</desc>
+          <desc class="x left">472.193406593</desc>
+          <desc class="y left">154.268234923</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: VoleurMaigret (1966)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="582.962637363" cy="95.3473474545" r="4"/>
+          <desc class="value">1966: 0.38188</desc>
+          <desc class="x left">582.962637363</desc>
+          <desc class="y left">95.3473474545</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Felicie (1942)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="203.182417582" cy="187.937313476" r="4"/>
+          <desc class="value">1942: 0.36912</desc>
+          <desc class="x ">203.182417582</desc>
+          <desc class="y ">187.937313476</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MonAmiMaigret (1949)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="313.951648352" cy="191.710572279" r="4"/>
+          <desc class="value">1949: 0.3686</desc>
+          <desc class="x ">313.951648352</desc>
+          <desc class="y ">191.710572279</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Maigret tueur (1969)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="630.435164835" cy="224.799149478" r="4"/>
+          <desc class="value">1969: 0.36404</desc>
+          <desc class="x left top">630.435164835</desc>
+          <desc class="y left top">224.799149478</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaisonJuge (1940)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="171.534065934" cy="144.399711898" r="4"/>
+          <desc class="value">1940: 0.37512</desc>
+          <desc class="x ">171.534065934</desc>
+          <desc class="y ">144.399711898</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: CecileMorte (1940)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="171.534065934" cy="254.694969228" r="4"/>
+          <desc class="value">1940: 0.35992</desc>
+          <desc class="x top">171.534065934</desc>
+          <desc class="y top">254.694969228</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: AffaireNahour (1966)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="582.962637363" cy="161.814752529" r="4"/>
+          <desc class="value">1966: 0.37272</desc>
+          <desc class="x left">582.962637363</desc>
+          <desc class="y left">161.814752529</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MonsieurGallet (1931)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="29.1164835165" cy="235.828675211" r="4"/>
+          <desc class="value">1931: 0.36252</desc>
+          <desc class="x top">29.1164835165</desc>
+          <desc class="y top">235.828675211</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretEcole (1954)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="393.072527473" cy="122.921161787" r="4"/>
+          <desc class="value">1954: 0.37808</desc>
+          <desc class="x left">393.072527473</desc>
+          <desc class="y left">122.921161787</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretFantome (1964)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="551.314285714" cy="176.617537066" r="4"/>
+          <desc class="value">1964: 0.37068</desc>
+          <desc class="x left">551.314285714</desc>
+          <desc class="y left">176.617537066</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretGrandePerche (1951)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="345.6" cy="7.98189362252" r="4"/>
+          <desc class="value">1951: 0.39392</desc>
+          <desc class="x ">345.6</desc>
+          <desc class="y ">7.98189362252</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretAssises (1959)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="472.193406593" cy="240.472686046" r="4"/>
+          <desc class="value">1959: 0.36188</desc>
+          <desc class="x left top">472.193406593</desc>
+          <desc class="y left top">240.472686046</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretVieillards (1960)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="488.017582418" cy="152.526730859" r="4"/>
+          <desc class="value">1960: 0.374</desc>
+          <desc class="x left">488.017582418</desc>
+          <desc class="y left">152.526730859</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigreVoleur (1961)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="503.841758242" cy="182.712801286" r="4"/>
+          <desc class="value">1961: 0.36984</desc>
+          <desc class="x left">503.841758242</desc>
+          <desc class="y left">182.712801286</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Ecluse (1933)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="60.7648351648" cy="144.109461221" r="4"/>
+          <desc class="value">1933: 0.37516</desc>
+          <desc class="x ">60.7648351648</desc>
+          <desc class="y ">144.109461221</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: InspecteurCadavre (1943)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="219.006593407" cy="96.218099486" r="4"/>
+          <desc class="value">1943: 0.38176</desc>
+          <desc class="x ">219.006593407</desc>
+          <desc class="y ">96.218099486</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: AmieMmeMaigret (1950)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="329.775824176" cy="177.778539774" r="4"/>
+          <desc class="value">1950: 0.37052</desc>
+          <desc class="x ">329.775824176</desc>
+          <desc class="y ">177.778539774</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretSeFache (1945)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="250.654945055" cy="118.277150952" r="4"/>
+          <desc class="value">1945: 0.37872</desc>
+          <desc class="x ">250.654945055</desc>
+          <desc class="y ">118.277150952</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretMort (1947)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="282.303296703" cy="178.068790451" r="4"/>
+          <desc class="value">1947: 0.37048</desc>
+          <desc class="x ">282.303296703</desc>
+          <desc class="y ">178.068790451</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: FolleMaigret (1970)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="646.259340659" cy="75.610301406" r="4"/>
+          <desc class="value">1970: 0.3846</desc>
+          <desc class="x left">646.259340659</desc>
+          <desc class="y left">75.610301406</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: NuitCarrefour (1931)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="29.1164835165" cy="190.54956957" r="4"/>
+          <desc class="value">1931: 0.36876</desc>
+          <desc class="x ">29.1164835165</desc>
+          <desc class="y ">190.54956957</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Maigret (1934)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="76.589010989" cy="114.503892149" r="4"/>
+          <desc class="value">1934: 0.37924</desc>
+          <desc class="x ">76.589010989</desc>
+          <desc class="y ">114.503892149</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: VacancesMaigret (1948)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="298.127472527" cy="124.66266585" r="4"/>
+          <desc class="value">1948: 0.37784</desc>
+          <desc class="x ">298.127472527</desc>
+          <desc class="y ">124.66266585</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretHesite (1968)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="614.610989011" cy="83.44706969" r="4"/>
+          <desc class="value">1968: 0.38352</desc>
+          <desc class="x left">614.610989011</desc>
+          <desc class="y left">83.44706969</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaigretLognon (1952)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="361.424175824" cy="125.823668559" r="4"/>
+          <desc class="value">1952: 0.37768</desc>
+          <desc class="x left">361.424175824</desc>
+          <desc class="y left">125.823668559</desc>
+        </g>
+      </g>
+      <g class="series serie-1 color-1">
+        <g class="dots">
+          <desc class="label">Simenon: Malempin (1940)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="171.534065934" cy="178.939542483" r="4"/>
+          <desc class="value">1940: 0.37036</desc>
+          <desc class="x ">171.534065934</desc>
+          <desc class="y ">178.939542483</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Pedigree3 (1943)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="219.006593407" cy="203.030348689" r="4"/>
+          <desc class="value">1943: 0.36704</desc>
+          <desc class="x ">219.006593407</desc>
+          <desc class="y ">203.030348689</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Pedigree2 (1942)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="203.182417582" cy="253.824217196" r="4"/>
+          <desc class="value">1942: 0.36004</desc>
+          <desc class="x top">203.182417582</desc>
+          <desc class="y top">253.824217196</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Train (1961)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="503.841758242" cy="206.223106138" r="4"/>
+          <desc class="value">1961: 0.3666</desc>
+          <desc class="x left">503.841758242</desc>
+          <desc class="y left">206.223106138</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Dimanche (1958)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="456.369230769" cy="210.286615619" r="4"/>
+          <desc class="value">1958: 0.36604</desc>
+          <desc class="x left top">456.369230769</desc>
+          <desc class="y left top">210.286615619</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: RapportGendarme (1944)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="234.830769231" cy="137.723946323" r="4"/>
+          <desc class="value">1944: 0.37604</desc>
+          <desc class="x ">234.830769231</desc>
+          <desc class="y ">137.723946323</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: QuartierNegre (1935)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="92.4131868132" cy="151.655978828" r="4"/>
+          <desc class="value">1935: 0.37412</desc>
+          <desc class="x ">92.4131868132</desc>
+          <desc class="y ">151.655978828</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: AineFerchaux (1943)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="219.006593407" cy="192.291073633" r="4"/>
+          <desc class="value">1943: 0.36852</desc>
+          <desc class="x ">219.006593407</desc>
+          <desc class="y ">192.291073633</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MortAuguste (1966)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="582.962637363" cy="142.367957158" r="4"/>
+          <desc class="value">1966: 0.3754</desc>
+          <desc class="x left">582.962637363</desc>
+          <desc class="y left">142.367957158</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: JumentPerdue (1948)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="298.127472527" cy="188.808065507" r="4"/>
+          <desc class="value">1948: 0.369</desc>
+          <desc class="x ">298.127472527</desc>
+          <desc class="y ">188.808065507</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Porte (1962)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="519.665934066" cy="160.073248466" r="4"/>
+          <desc class="value">1962: 0.37296</desc>
+          <desc class="x left">519.665934066</desc>
+          <desc class="y left">160.073248466</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Vieille (1959)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="472.193406593" cy="75.9005520832" r="4"/>
+          <desc class="value">1959: 0.38456</desc>
+          <desc class="x left">472.193406593</desc>
+          <desc class="y left">75.9005520832</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MarieQuiLouche (1951)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="345.6" cy="37.8777133723" r="4"/>
+          <desc class="value">1951: 0.3898</desc>
+          <desc class="x ">345.6</desc>
+          <desc class="y ">37.8777133723</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MaisonSeptFilles (1941)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="187.358241758" cy="139.465450386" r="4"/>
+          <desc class="value">1941: 0.3758</desc>
+          <desc class="x ">187.358241758</desc>
+          <desc class="y ">139.465450386</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Horloger (1954)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="393.072527473" cy="65.1612770275" r="4"/>
+          <desc class="value">1954: 0.38604</desc>
+          <desc class="x left">393.072527473</desc>
+          <desc class="y left">65.1612770275</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Temoins (1955)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="408.896703297" cy="150.204725442" r="4"/>
+          <desc class="value">1955: 0.37432</desc>
+          <desc class="x left">408.896703297</desc>
+          <desc class="y left">150.204725442</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: DisparitionOdile (1970)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="646.259340659" cy="29.460443734" r="4"/>
+          <desc class="value">1970: 0.39096</desc>
+          <desc class="x left">646.259340659</desc>
+          <desc class="y left">29.460443734</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: NouveauVille (1950)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="329.775824176" cy="200.418092595" r="4"/>
+          <desc class="value">1950: 0.3674</desc>
+          <desc class="x ">329.775824176</desc>
+          <desc class="y ">200.418092595</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: TempsAnais (1951)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="345.6" cy="148.172970702" r="4"/>
+          <desc class="value">1951: 0.3746</desc>
+          <desc class="x ">345.6</desc>
+          <desc class="y ">148.172970702</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: PassagerPolarlys (1932)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="44.9406593407" cy="291.847055907" r="4"/>
+          <desc class="value">1932: 0.3548</desc>
+          <desc class="x top">44.9406593407</desc>
+          <desc class="y top">291.847055907</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: CageVerre (1971)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="662.083516484" cy="65.4515277047" r="4"/>
+          <desc class="value">1971: 0.386</desc>
+          <desc class="x left">662.083516484</desc>
+          <desc class="y left">65.4515277047</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: VeriteBebeDonge (1942)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="203.182417582" cy="215.220877131" r="4"/>
+          <desc class="value">1942: 0.36536</desc>
+          <desc class="x top">203.182417582</desc>
+          <desc class="y top">215.220877131</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Complices (1956)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="424.720879121" cy="138.304447677" r="4"/>
+          <desc class="value">1956: 0.37596</desc>
+          <desc class="x left">424.720879121</desc>
+          <desc class="y left">138.304447677</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: DestinMalou (1947)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="282.303296703" cy="27.7189396709" r="4"/>
+          <desc class="value">1947: 0.3912</desc>
+          <desc class="x ">282.303296703</desc>
+          <desc class="y ">27.7189396709</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MonsieurLaSouris (1937)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="124.061538462" cy="285.171290332" r="4"/>
+          <desc class="value">1937: 0.35572</desc>
+          <desc class="x top">124.061538462</desc>
+          <desc class="y top">285.171290332</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Betty (1961)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="503.841758242" cy="87.2203284933" r="4"/>
+          <desc class="value">1961: 0.383</desc>
+          <desc class="x left">503.841758242</desc>
+          <desc class="y left">87.2203284933</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Fils (1956)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="424.720879121" cy="203.320599366" r="4"/>
+          <desc class="value">1956: 0.367</desc>
+          <desc class="x left">424.720879121</desc>
+          <desc class="y left">203.320599366</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: AnneauxBicetre (1963)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="535.49010989" cy="191.710572279" r="4"/>
+          <desc class="value">1963: 0.3686</desc>
+          <desc class="x left">535.49010989</desc>
+          <desc class="y left">191.710572279</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Negre (1957)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="440.545054945" cy="193.452076342" r="4"/>
+          <desc class="value">1957: 0.36836</desc>
+          <desc class="x left">440.545054945</desc>
+          <desc class="y left">193.452076342</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Locataire (1934)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="76.589010989" cy="124.372415173" r="4"/>
+          <desc class="value">1934: 0.37788</desc>
+          <desc class="x ">76.589010989</desc>
+          <desc class="y ">124.372415173</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: FenetreRouet (1942)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="203.182417582" cy="140.916703772" r="4"/>
+          <desc class="value">1942: 0.3756</desc>
+          <desc class="x ">203.182417582</desc>
+          <desc class="y ">140.916703772</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: OursPeluche (1960)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="488.017582418" cy="122.921161787" r="4"/>
+          <desc class="value">1960: 0.37808</desc>
+          <desc class="x left">488.017582418</desc>
+          <desc class="y left">122.921161787</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: TroisCrimesAmis (1937)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="124.061538462" cy="407.076574748" r="4"/>
+          <desc class="value">1937: 0.33892</desc>
+          <desc class="x top">124.061538462</desc>
+          <desc class="y top">407.076574748</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Innocents (1971)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="662.083516484" cy="66.032029059" r="4"/>
+          <desc class="value">1971: 0.38592</desc>
+          <desc class="x left">662.083516484</desc>
+          <desc class="y left">66.032029059</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Demenagement (1967)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="598.786813187" cy="133.660436843" r="4"/>
+          <desc class="value">1967: 0.3766</desc>
+          <desc class="x left">598.786813187</desc>
+          <desc class="y left">133.660436843</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: BourgmestreFurnes (1938)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="139.885714286" cy="118.567401629" r="4"/>
+          <desc class="value">1938: 0.37868</desc>
+          <desc class="x ">139.885714286</desc>
+          <desc class="y ">118.567401629</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: HommePetitChien (1964)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="551.314285714" cy="150.785226796" r="4"/>
+          <desc class="value">1964: 0.37424</desc>
+          <desc class="x left">551.314285714</desc>
+          <desc class="y left">150.785226796</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: FuiteMonde (1945)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="250.654945055" cy="99.7011076122" r="4"/>
+          <desc class="value">1945: 0.38128</desc>
+          <desc class="x ">250.654945055</desc>
+          <desc class="y ">99.7011076122</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: MortBelle (1951)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="345.6" cy="138.884949032" r="4"/>
+          <desc class="value">1951: 0.37588</desc>
+          <desc class="x ">345.6</desc>
+          <desc class="y ">138.884949032</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: LongCours (1936)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="108.237362637" cy="252.37296381" r="4"/>
+          <desc class="value">1936: 0.36024</desc>
+          <desc class="x top">108.237362637</desc>
+          <desc class="y top">252.37296381</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Pedigree1 (1941)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="187.358241758" cy="145.850965284" r="4"/>
+          <desc class="value">1941: 0.37492</desc>
+          <desc class="x ">187.358241758</desc>
+          <desc class="y ">145.850965284</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: TrainVenise (1965)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="567.138461538" cy="238.150680628" r="4"/>
+          <desc class="value">1965: 0.3622</desc>
+          <desc class="x left top">567.138461538</desc>
+          <desc class="y left top">238.150680628</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: FondBouteille (1949)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="313.951648352" cy="118.277150952" r="4"/>
+          <desc class="value">1949: 0.37872</desc>
+          <desc class="x ">313.951648352</desc>
+          <desc class="y ">118.277150952</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: TestamentDonadieu (1936)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="108.237362637" cy="178.649291806" r="4"/>
+          <desc class="value">1936: 0.3704</desc>
+          <desc class="x ">108.237362637</desc>
+          <desc class="y ">178.649291806</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: CoupLune (1933)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="60.7648351648" cy="210.867116973" r="4"/>
+          <desc class="value">1933: 0.36596</desc>
+          <desc class="x top">60.7648351648</desc>
+          <desc class="y top">210.867116973</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: RicheHomme (1970)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="646.259340659" cy="39.038716081" r="4"/>
+          <desc class="value">1970: 0.38964</desc>
+          <desc class="x left">646.259340659</desc>
+          <desc class="y left">39.038716081</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: TouristeBananes (1938)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="139.885714286" cy="233.216419116" r="4"/>
+          <desc class="value">1938: 0.36288</desc>
+          <desc class="x top">139.885714286</desc>
+          <desc class="y top">233.216419116</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: EncoreNoisetiers (1969)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="630.435164835" cy="177.488289097" r="4"/>
+          <desc class="value">1969: 0.37056</desc>
+          <desc class="x left">630.435164835</desc>
+          <desc class="y left">177.488289097</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: Prison (1967)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="598.786813187" cy="53.260999263" r="4"/>
+          <desc class="value">1967: 0.38768</desc>
+          <desc class="x left">598.786813187</desc>
+          <desc class="y left">53.260999263</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: BilanMaletras (1943)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="219.006593407" cy="65.1612770275" r="4"/>
+          <desc class="value">1943: 0.38604</desc>
+          <desc class="x ">219.006593407</desc>
+          <desc class="y ">65.1612770275</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: VoyageurToussaint (1941)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="187.358241758" cy="155.429237631" r="4"/>
+          <desc class="value">1941: 0.3736</desc>
+          <desc class="x ">187.358241758</desc>
+          <desc class="y ">155.429237631</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: DemoisellesConcarneau (1936)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="108.237362637" cy="57.6147594207" r="4"/>
+          <desc class="value">1936: 0.38708</desc>
+          <desc class="x ">108.237362637</desc>
+          <desc class="y ">57.6147594207</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: RelaisAlsace (1931)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="29.1164835165" cy="217.542882548" r="4"/>
+          <desc class="value">1931: 0.36504</desc>
+          <desc class="x top">29.1164835165</desc>
+          <desc class="y top">217.542882548</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: JumentPerdue (1948)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="298.127472527" cy="198.966839209" r="4"/>
+          <desc class="value">1948: 0.3676</desc>
+          <desc class="x ">298.127472527</desc>
+          <desc class="y ">198.966839209</desc>
+        </g>
+        <g class="dots">
+          <desc class="label">Simenon: AntoineJulie (1953)</desc>
+          <circle class="dot reactive tooltip-trigger" cx="377.248351648" cy="114.213641471" r="4"/>
+          <desc class="value">1953: 0.37928</desc>
+          <desc class="x left">377.248351648</desc>
+          <desc class="y left">114.213641471</desc>
+        </g>
+      </g>
+    </g>
+    <g class="plot text-overlay" transform="translate(88, 50)">
+      <g class="series serie-0 color-0"/>
+      <g class="series serie-1 color-1"/>
+    </g>
+    <g class="plot tooltip-overlay" transform="translate(88, 50)">
+      <g class="tooltip" style="opacity: 0" transform="translate(0 0)">
+        <rect class="tooltip-box" height="0" rx="0" ry="0" width="0"/>
+        <g class="text"/>
+      </g>
+    </g>
+    <g class="legends" transform="translate(98, 550)">
+      <g class="legend reactive activate-serie" id="activate-serie-0">
+        <rect class="color-0 reactive" height="12" width="12" x="0.0" y="2.0"/>
+        <text x="17.0" y="12.8">maigret</text>
+      </g>
+      <g class="legend reactive activate-serie" id="activate-serie-1">
+        <rect class="color-1 reactive" height="12" width="12" x="345.6" y="2.0"/>
+        <text x="362.6" y="12.8">romans</text>
+      </g>
+    </g>
+  </g>
+</svg>
