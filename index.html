@@ -40,7 +40,8 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 ## La différentiation des genres romanesques chez Georges Simenon
 <hr/>
 <br/>
-<p>Frankoromanistentag 2016, Saarbrücken</p>
+<p>10. Frankoromanistentag</p>
+<p>Universität des Saarlands, Sept. 2016</p>
 <br/>
 <hr/>
 <p>Dr. Christof Schöch<br/>CLiGS - Universität Würzburg</p>
@@ -71,19 +72,19 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <section data-markdown>
 <script type="text/template">
 ## Pourquoi Georges Simenon?
-* écrivain prolifique: 238 romans sous patronyme
-* a écrit autant de romans policiers que de romans psychologiques
-* publié en entier en version numérique
-* opportunité et nécessité des méthodes quantitatives
+* écrivain prolifique: 238 romans sous patronyme <!-- .element: class="fragment" data-fragment-index="1" -->
+* a écrit autant de romans policiers ("Maigret") que de romans psychologiques ("durs") <!-- .element: class="fragment" data-fragment-index="2" -->
+* publié intégralement en version numérique <!-- .element: class="fragment" data-fragment-index="3" -->
+* opportunité et nécessité des méthodes quantitatives <!-- .element: class="fragment" data-fragment-index="4" -->
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-## Interogations
-* Qu'est-ce qui distingue les Maigret des romans durs?
-* Qu'est-ce qui distingue Simenon des contemporains?
-* Que peuvent apporter les méthodes quantitatives à ce genre de questions?
+## Interrogations
+* Qu'est-ce qui distingue les Maigret des romans durs? <!-- .element: class="fragment" data-fragment-index="1" -->
+* Qu'est-ce qui distingue Simenon des contemporains? <!-- .element: class="fragment" data-fragment-index="2" -->
+* Que peuvent apporter les méthodes quantitatives à ce genre de questions? <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
@@ -108,27 +109,26 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-## Aperçu du corpus
-<p><img height="500" data-src="img/distvis-bydecades_fourway_598.png"></img></p>
-<p>Nombre de romans par décennie</p></script>
+## Les deux collections
+<p><img height="600" data-src="img/distvis-bydecades_fourway_598.png"></img></p>
+</script>
 </section>
 
-
-
+<!---
 <section data-markdown>
 <script type="text/template">
 ## Aperçu du corpus
 <p><img height="500" data-src="img/authors_stylo_CA_900_MFWs_Culled_0_Pronouns deleted_Eder's Delta__001.png"></img></p>
 <p>Similarité du vocabulaire fréquent, établie avec "stylo"</p></script>
 </section>
-
+-->
 
 <section data-markdown>
 <script type="text/template">
 ## Méthodes numériques
-* Compter la longueur des phrases
-* Relever la proportion du vocabulaire de base
-* Topic Modeling
+* Établir la longueur des phrases <!-- .element: class="fragment" data-fragment-index="1" -->
+* Relever la proportion du vocabulaire de base <!-- .element: class="fragment" data-fragment-index="2" -->
+* Analyse thématique utilisant Topic Modeling <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
@@ -158,13 +158,14 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <section data-markdown>
 <script type="text/template">
 ## Méthode
-* Dans chaque roman:
-    * prélever 10 échantillons de 5.000 mots de suite
-    * séparer en phrases "[.!?]"; les compter
-    * séparer en mots "[\W]"; les compter
-    * pour tous les échantillons: moyenne, std, etc.
-* Combiner avec les métadonnées (auteur, année de création, groupe de romans)
-* Visualisation et test statistiques
+* Dans chaque roman: <!-- .element: class="fragment" data-fragment-index="1" -->
+    * prélever 10 échantillons de 5.000 mots de suite <!-- .element: class="fragment" data-fragment-index="2" -->
+    * séparer en phrases "[.!?]"; les compter <!-- .element: class="fragment" data-fragment-index="3" -->
+    * séparer en mots "[\W]"; les compter <!-- .element: class="fragment" data-fragment-index="4" -->
+    * pour tous les échantillons: moyenne, std, etc. <!-- .element: class="fragment" data-fragment-index="5" -->
+* Combiner avec les métadonnées (auteur, année de création, groupe de romans) <!-- .element: class="fragment" data-fragment-index="6" -->
+* Visualisation et test statistiques <!-- .element: class="fragment" data-fragment-index="7" -->
+* Modélisation / simplification : longueur ≈ complexité <!-- .element: class="fragment" data-fragment-index="8" -->
 </script>
 </section>
 
@@ -203,8 +204,9 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Résultats
-* Les phrases sont, en moyenne, plus courtes dans les Maigret que dans les romans durs (!=Richeaudeau)
-* Les phrases sont, en moyenne, plus courtes chez Simenon que chez les contemporains
+* Les phrases sont, en moyenne, plus courtes dans les Maigret que dans les romans durs (!=Richeaudeau) <!-- .element: class="fragment" data-fragment-index="1" -->
+* L'ampleur de cette différentiation varie avec les décennies <!-- .element: class="fragment" data-fragment-index="2" -->
+* Les phrases sont, en moyenne, plus courtes chez Simenon que chez les contemporains <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
@@ -221,34 +223,35 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Motivation
-> J'essaie moi aussi de faire les phrases les plus simples possibles avec les mots les plus simples. J'écris avec des mots-matière, le mot vent, le mot chaud, le mot froid. Les mots-matière sont l'équivalent des couleurs pures. (Simenon, 1965)</p>
+> J'essaie moi aussi de faire les phrases les plus simples possibles avec les mots les plus simples. J'écris avec des mots-matière, le mot vent, le mot chaud, le mot froid. Les mots-matière sont l'équivalent des couleurs pures. (Simenon, 1965)</p> <!-- .element: class="fragment" data-fragment-index="1" -->
 
-> Plus il approfondira son art, plus il tendra vers la simplification et la sobriété, la réduction et le dépouillement sans jamais verser dans la sécheresse. (Pierre Assouline, 1992)</p>
+> Plus il approfondira son art, plus il tendra vers la simplification et la sobriété, la réduction et le dépouillement sans jamais verser dans la sécheresse. (Pierre Assouline, 1992) <!-- .element: class="fragment" data-fragment-index="2" -->
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
 ## Méthode: listes de mots communs
-* Liste "Brunet":
+<!--* Liste "Brunet":
     * les 1500 lemmes les plus fréquents en Français
     * liste établie par Étienne Brunet
-* Liste "romanvingt":
-    * les 1024 noms, verbes et adjectifs présents dans 80% des romans
-    * établie sur la base de 525 romans (dont 25 de Simenon)
-* Modélisation des "mots matière" par "les mots les plus fréquents" ou "mots sémantiques les plus répandus"
+-->
+* Liste "romanvingt": <!-- .element: class="fragment" data-fragment-index="1" -->
+    * les 1024 noms, verbes et adjectifs présents dans 80% des romans <!-- .element: class="fragment" data-fragment-index="2" -->
+    * établie sur la base de 525 romans (dont 25 de Simenon) <!-- .element: class="fragment" data-fragment-index="3" -->
+* Modélisation des "mots matière" par "mots sémantiques les plus répandus" <!-- .element: class="fragment" data-fragment-index="4" -->
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
 ## Méthode
-* Dans chaque roman
-    * prélever 10 échantillons de 5.000 mots de suite
-    * établir la proportion des mots simples dans l'échantillon
-    * pour tous les échantillons: moyenne, std.
-* Combiner avec les métadonnées 
-* Visualisation et test statistiques
+* Dans chaque roman <!-- .element: class="fragment" data-fragment-index="1" -->
+    * prélever 10 échantillons de 5.000 mots de suite <!-- .element: class="fragment" data-fragment-index="2" -->
+    * établir la proportion des mots simples dans l'échantillon <!-- .element: class="fragment" data-fragment-index="3" -->
+    * pour tous les échantillons: moyenne, std. <!-- .element: class="fragment" data-fragment-index="4" -->
+* Combiner avec les métadonnées  <!-- .element: class="fragment" data-fragment-index="5" -->
+* Visualisation et test statistiques <!-- .element: class="fragment" data-fragment-index="6" -->
 </script>
 </section>
 
@@ -275,10 +278,10 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Résultats
-* La proportion de mots simples dans les Maigret et les romans durs est identique
-* Le vocabulaire des romans de Simenon devient de plus en plus simple
-* Simenon utilise un vocabulaire nettement plus simple que ses contemporains
-* Quelques romanciers extrêmes: Audoux, Camus, Giono, Duras; Roussel, Perec, Tournier
+* La proportion de mots simples dans les Maigret et les romans durs est identique <!-- .element: class="fragment" data-fragment-index="1" -->
+* Le vocabulaire des romans de Simenon devient de plus en plus simple <!-- .element: class="fragment" data-fragment-index="2" -->
+* Simenon utilise un vocabulaire nettement plus simple que ses contemporains <!-- .element: class="fragment" data-fragment-index="3" -->
+* Quelques romanciers extrêmes: Audoux, Camus, Giono, Duras; Roussel, Perec, Tournier <!-- .element: class="fragment" data-fragment-index="4" -->
 </script>
 </section>
 
@@ -295,8 +298,8 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Motivation
-* Longueur des phrases ou proportion des mots simples: caractéristiques abstraites
-* Caractéristique plus concrète: les topics (thèmes et motifs) des romans
+* Longueur des phrases ou proportion des mots simples : caractéristiques abstraites <!-- .element: class="fragment" data-fragment-index="1" -->
+* Caractéristique plus concrète, sémantique : les topics (thèmes et motifs) des romans <!-- .element: class="fragment" data-fragment-index="2" -->
 </script>
 </section>
 
@@ -310,12 +313,12 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Comparaison
-* Pour chaque topic:
-    * pour chaque roman:
-        * calculer la moyenne de la probabilité du topic
-* Pour quatre groupes de romans:
-    * Dessiner un "boxplot" des moyennes pertinentes
-    * Test statistique de différence
+* Pour chaque topic: <!-- .element: class="fragment" data-fragment-index="1" -->
+    * pour chaque roman: <!-- .element: class="fragment" data-fragment-index="2" -->
+        * calculer la moyenne de la probabilité du topic <!-- .element: class="fragment" data-fragment-index="3" -->
+* Pour quatre groupes de romans: <!-- .element: class="fragment" data-fragment-index="4" -->
+    * Dessiner un "boxplot" des moyennes pertinentes <!-- .element: class="fragment" data-fragment-index="5" -->
+    * Test statistique de différence <!-- .element: class="fragment" data-fragment-index="6" -->
 </script>
 </section>
 
@@ -415,10 +418,10 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Résultats
-* On peut constater un certain nombre de différences significatives au niveau des topics
-* Simenon a ses topics de prédilection
-* Les deux sous-genres pratiqués par Simenon se distinguent également
-* Pour beaucoup des 200 topics identifiés, les différences sont négligeables: base thématique commune du roman contemporain? Topics trop spécifiques?
+* On peut constater un certain nombre de différences significatives au niveau des topics <!-- .element: class="fragment" data-fragment-index="1" -->
+* Simenon a ses topics de prédilection <!-- .element: class="fragment" data-fragment-index="2" -->
+* Les deux sous-genres pratiqués par Simenon se distinguent également <!-- .element: class="fragment" data-fragment-index="3" -->
+* Mais: souvent, les différences sont négligeables : base thématique commune du roman contemporain ? Topics trop spécifiques ? <!-- .element: class="fragment" data-fragment-index="4" -->
 </script>
 </section>
 
@@ -435,25 +438,26 @@ Mann-Whitney p-value
 <section data-markdown>
 <script type="text/template">
 ## Résultats
-* À différents niveaux (structure phrastique, vocabulaire, thèmes), on peut constater des différences entre les genres pratioqués par Simenon ainsi qu'entre Simenon et ses contemporains.
+* On constate des différences entre les genres pratiqués par Simenon ainsi qu'entre Simenon et ses contemporains. <!-- .element: class="fragment" data-fragment-index="1" -->
+* Et ce à différents niveaux: structure phrastique, vocabulaire, thèmes/motifs <!-- .element: class="fragment" data-fragment-index="2" -->
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
 ## Challenges 
-* Est-ce que ces différences sont du même ordre de grandeur pour Simenon que pour d'autres auteurs?
-* Comment mieux saisir la complexité syntaxique ? (syntactic parsing)
-* Comment mieux saisir le vocabulaire ? (word2vec)
+* Est-ce que ces différences sont du même ordre de grandeur pour Simenon que pour d'autres auteurs? (cas comparables?) <!-- .element: class="fragment" data-fragment-index="1" -->
+* Comment mieux saisir la complexité syntaxique ? (syntactic parsing) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Comment mieux saisir le vocabulaire ? (word2vec) <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
 ## Plus généralement
-* Visualisation/exploration et hypothèses/statistique
-* Méthodes quantitatives, méthodes herméneutiques
-* Nouvelles questions vs. réplication libre 
+* Visualisation/exploration et hypothèses/statistique <!-- .element: class="fragment" data-fragment-index="1" -->
+* Complémentarité des méthodes quantitatives, méthodes herméneutiques <!-- .element: class="fragment" data-fragment-index="2" -->
+* Nouvelles questions vs. réplication libre  <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
@@ -465,9 +469,9 @@ Mann-Whitney p-value
 # Références
 
 <small>
-* Richeaudeau
-* Assouline
-* 
+* Assouline, Pierre (1992). _Georges Simenon. Biographie_. Paris : Juillard. (Notamment : "Le style, c'est le rythme", 566-607.)
+* Blei, David M. (2012). "Probabilistic Topic Models". _Communications of the ACM_ 55.4, 77–84.
+* Richeaudeau, François (1982). “Simenon : une écriture pas si simple qu'on le penserait”. _Communication et langages_ 53, 11-32. doi : 10.3406/colan.1982.1484. 
 
 </small>
 
@@ -489,8 +493,9 @@ Mann-Whitney p-value
 
 <section data-markdown>
 <script type="text/template">
-<p><img height="600" data-src="img/novel-ensemble-vs-sarrebruck_creation-RV80NVA-mean_scatterplot.svg"></img></p>
-</script>
+## Aperçu du corpus
+<p><img height="500" data-src="img/authors_stylo_CA_900_MFWs_Culled_0_Pronouns deleted_Eder's Delta__001.png"></img></p>
+<p>Similarité du vocabulaire fréquent, établie avec "stylo"</p></script>
 </section>
 
 <section data-markdown>
@@ -498,6 +503,21 @@ Mann-Whitney p-value
 <p><img height="600" data-src="img/novel-ensemble-vs-sarrebruck_creation-SL-mean_scatterplot.svg"></img></p>
 </script>
 </section>
+
+<section data-markdown>
+<script type="text/template">
+<p><img height="600" data-src="img/novel-ensemble-vs-sarrebruck_creation-RV80NVA-mean_scatterplot.svg"></img></p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Les quatre groupes
+<p><img height="500" data-src="img/dist-heatmap_by-fourway-normalized.png"></img></p>
+<p>Probabilités normalisées des topics</p>
+</script>
+</section>
+
 
 </section>
 
